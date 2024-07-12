@@ -1,0 +1,141 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+nav h1 {
+  margin-left: 20px;
+  color: red;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: -moz-fit-content;
+  width: fit-content;
+  list-style: none;
+}
+nav ul li {
+  margin-right: 30px;
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+  padding: 10px;
+  text-wrap: nowrap;
+}
+
+#section1 {
+  border: 1px solid black;
+  height: 60vh;
+  width: 100%;
+  border-bottom-right-radius: 500px 500px;
+  border-top-left-radius: 500px 500px;
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+  background-image: url(./images/gym.jpg);
+}
+
+#section2 {
+  background-color: transparent;
+  height: 60vh;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+#section2 button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: 0px solid;
+}
+#section2 button:hover {
+  filter: brightness(50%);
+  cursor: pointer;
+}
+#section2 h1 {
+  font-size: 3em;
+  color: red;
+}
+#section2 aside {
+  padding: 10px;
+}
+#section2 #image {
+  width: 50%;
+  background-color: transparent;
+}
+#section2 #image img {
+  height: 100%;
+  width: 100%;
+}
+#section2 #text {
+  width: 50%;
+  background-color: transparent;
+  color: white;
+}
+
+#section3 {
+  padding: 1%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#section3 #contact {
+  padding: 10px;
+  width: 50%;
+  height: 50%;
+  text-align: right;
+}
+#section3 #contact a {
+  margin: 10px;
+  margin-right: 20px;
+  color: white;
+}
+#section3 #just {
+  padding: 10px;
+  width: 50%;
+  height: 50%;
+  margin-left: 10px;
+}
+#section3 #just h3 {
+  font-size: larger;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    font-size: 0.8em;
+  }
+  #section1 {
+    height: 40vh;
+  }
+  #section2 {
+    width: 100%;
+  }
+  #section2 #text {
+    font-size: smaller;
+  }
+}/*# sourceMappingURL=styles.css.map */
